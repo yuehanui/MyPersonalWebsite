@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-color: rgb(17,19,15);
+    background-color: rgb(37,39,35);
     font-family:Helvetica;
     font-weight: 100;
     color: rgb(190,190,190);
@@ -53,26 +53,38 @@ a:hover {
 }
 #preButton {
     float: left;
-    margin-left: 100px;
+    margin-left: 300px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 #nextButton {
     float: right;
-    margin-right: 100px;   
+    margin-right: 300px;   
 }
 .button {
     background-color: transparent;
     border-style: none;
     color: rgb(190,190,190);
     font-size: 50px;
-    padding-top: 160px;
+    margin-top: 220px;
 }
 .button:hover {
-    color: rgb(240,240,240);
+    color: rgb(10,190,190);
 }
 #frame {
-    height: 350px;
+    margin-top: 20px;   
+    height: 380px;
     width: 600px;
-    background-color: rgb(240,240,240);;
+    background-color:transparent;
+}
+
+#titleOutFrame{
+    color: rgb(29,155,161);
+    font-size: 40px;
+}
+#titleInFrame {
+    font-size: 25px;
+    margin-bottom: 30px;
 }
 
 .dotButton {
@@ -89,4 +101,24 @@ a:hover {
     border-style: none;
     display: inline-block;
 }
+#dot2 {
+    background-color: rgb(10,190,190);
+}
 
+.frame2 {
+    background-color: rgb(210,220,220);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: none;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+img {
+    height: 70px;
+
+    margin-top: 14px;
+
+}
