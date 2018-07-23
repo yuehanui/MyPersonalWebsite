@@ -28,39 +28,149 @@
     <div id="content" align="center">
       <button id="preButton" class="button">&#10513;</button>
       <button id="nextButton" class="button">&#10513;</button>
+      <p id="titleOutFrame">My Skills</p>
       <div id="frame">
-        <p id="titleOutFrame">My Skills</p>
         <p id="titleInFrame">Front-end</p>
-        <span class="frame2">          
-          <img src="html5.png" alt="html5">
-        </span>
-        <span class="frame2">          
-          <img src="css3.png" alt="css3">
-        </span>
-        <span class="frame2">          
-         <img src="javascript.png" alt="javascript">
-        </span>
-        <p></p>
-        <span class="frame2">          
-          <img src="jquery.png" alt="jquery">
-        </span>
-        <span class="frame2">          
-          <img src="react.png" alt="react">
-        </span>
-        <span class="frame2">         
-          <img src="bootstrap.png" alt="bootstrap" style="margin-top: 18px;">
-        </span>
+        <div id="slider" align="left">
+          <div id="page1" align="center">
+            <span class="frame2">          
+              <img src="html5.png" alt="html5">
+            </span>
+            <span class="frame2">          
+              <img src="css3.png" alt="css3">
+            </span>
+            <span class="frame2">          
+             <img src="javascript.png" alt="javascript">
+            </span>
+            
+            <span class="frame2">          
+              <img src="jquery.png" alt="jquery">
+            </span>
+            <span class="frame2">          
+              <img src="react.png" alt="react">
+            </span>
+            <span class="frame2">         
+              <img src="bootstrap.png" alt="bootstrap" style="padding-top: 2px;">
+            </span>
+          </div>
+
+          <div id="page2" align="center">
+            <span class="frame2">          
+              <img src="python.png" alt="python">
+            </span>
+            <span class="frame2">          
+              <img src="tensorflow.png" alt="tensorflow" style="padding-bottom: 5px;">
+            </span>
+            <span class="frame2">          
+              <img src="keras.png" alt="keras">
+            </span>
+            <span class="frame2">          
+              <img src="pandas.png" alt="pandas" style="padding-top: 10px; height: 68px; ">
+            </span>
+            <span class="frame2">          
+              <img src="numpy.png" alt="numpy" style="height: ">
+            </span>
+          </div>
+
+          <div id="page3" align="center">
+            <span class="frame2">          
+              <img src="git.png" alt="git">
+            </span>
+            <span class="frame2">          
+              <img src="office.png" alt="office">
+            </span>
+            <span class="frame2">          
+              <img src="svn.png" alt="svn" >
+            </span>
+            <span class="frame2">          
+              <img src="sql.png" alt="sql" >
+            </span>
+          </div>
+        </div>
 
 
 
         
       </div>
       <div id="dots">
-        <button class="dotButton"><span class="dot" id="dot1"></span></button>
-        <button class="dotButton"><span class="dot" id="dot2"></span></button>
-        <button class="dotButton"><span class="dot" id="dot3"></span></button>
+        <button id="dotButton1"><span class="dot" id="dot1"></span></button>
+        <button id="dotButton2"><span class="dot" id="dot2"></span></button>
+        <button id="dotButton3"><span class="dot" id="dot3"></span></button>
       </div>  
     </div>
+    <script>
+      $(document).ready(function(){
+        var dotFlag = 1;
+        var slider = $("#slider");
+        
+        var titles = ["Front-end","Languages & Frameworks","Other skills"];
+       
+        var inilineTitle = document.getElementById("titleInFrame");
+        
+        $("#preButton").click(function(){
+          if (dotFlag != 1) {
+            slider.animate({left: '+=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            dotFlag -=1;
+            $("#dot"+dotFlag).css("background-color", "rgb(10,190,190)");
+            inilineTitle.innerHTML = titles[dotFlag-1];
+          }
+        })
+        $("#nextButton").click(function(){
+          if (dotFlag != 3) {
+            slider.animate({left: '-=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            dotFlag +=1;
+            $("#dot"+dotFlag).css("background-color", "rgb(10,190,190)");
+            inilineTitle.innerHTML = titles[dotFlag-1];
+          }
+        })
+        $("#dotButton1").click(function(){
+          if (dotFlag == 2) {
+            slider.animate({left: '+=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          else if (dotFlag == 3) {
+            slider.animate({left: '+=800px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          dotFlag =1;
+          $("#dot1").css("background-color", "rgb(10,190,190)");
+        })
+
+        $("#dotButton2").click(function(){
+          if (dotFlag == 1) {
+            slider.animate({left: '-=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          else if (dotFlag == 3) {
+            slider.animate({left: '+=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          dotFlag = 2;
+          $("#dot2").css("background-color", "rgb(10,190,190)");
+        })
+
+        $("#dotButton3").click(function(){
+          if (dotFlag == 1) {
+            slider.animate({left: '-=800px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          else if (dotFlag == 2) {
+            slider.animate({left: '-=400px'});
+            $("#dot"+dotFlag).css("background-color", "rgb(190,190,190)");
+            
+          }
+          dotFlag =3;
+          $("#dot3").css("background-color", "rgb(10,190,190)");
+        })
+      })
+    </script>
 
 </body>
 </html>

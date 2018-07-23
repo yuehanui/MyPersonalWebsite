@@ -72,13 +72,27 @@ a:hover {
     color: rgb(10,190,190);
 }
 #frame {
-    margin-top: 20px;   
-    height: 380px;
-    width: 600px;
+    margin-top: -25px;   
+    height: 320px;
+    width: 400px;
     background-color:transparent;
+    
+    overflow: hidden;
+}
+#slider {
+    height: 320px;
+    width: 1210px;
+
+}
+#page1, #page2, #page3 {
+    height: 320px;
+    width: 395px;
+    display:inline-block;
+
 }
 
 #titleOutFrame{
+    margin-top: -20px;
     color: rgb(29,155,161);
     font-size: 40px;
 }
@@ -87,11 +101,20 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.dotButton {
+#dotButton1,
+#dotButton2,
+#dotButton3 {
     background-color: transparent;
     border-style: none;
     font-size: 50px;
     padding-right: 2px;
+}
+
+
+#dots{
+
+     margin-left: auto;
+     margin-right: auto;
 }
 .dot {
     height: 10px;
@@ -101,8 +124,13 @@ a:hover {
     border-style: none;
     display: inline-block;
 }
-#dot2 {
+
+
+#dot1 {
     background-color: rgb(10,190,190);
+}
+#slider {
+    position: relative;
 }
 
 .frame2 {
@@ -116,8 +144,10 @@ a:hover {
     margin-left: 8px;
     margin-bottom: 13px;
 }
+
 img {
     height: 70px;
+
 
     margin-top: 14px;
 
