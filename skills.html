@@ -34,56 +34,62 @@
         <div id="slider" align="left">
           <div id="page1" align="center">
             <span class="frame2">          
-              <img src="html5.png" alt="html5">
+              <img src="img/html5.png" alt="html5">
             </span>
             <span class="frame2">          
-              <img src="css3.png" alt="css3">
+              <img src="img/css3.png" alt="css3">
             </span>
             <span class="frame2">          
-             <img src="javascript.png" alt="javascript">
+             <img src="img/javascript.png" alt="javascript">
             </span>
             
             <span class="frame2">          
-              <img src="jquery.png" alt="jquery">
+              <img src="img/jquery.png" alt="jquery">
             </span>
             <span class="frame2">          
-              <img src="react.png" alt="react">
+              <img src="img/react.png" alt="react">
             </span>
             <span class="frame2">         
-              <img src="bootstrap.png" alt="bootstrap" style="padding-top: 2px;">
+              <img src="img/bootstrap.png" alt="bootstrap" style="padding-top: 2px;">
             </span>
           </div>
 
           <div id="page2" align="center">
             <span class="frame2">          
-              <img src="python.png" alt="python">
+              <img src="img/java.png" alt="java">
             </span>
             <span class="frame2">          
-              <img src="tensorflow.png" alt="tensorflow" style="padding-bottom: 5px;">
+              <img src="img/python.png" alt="python">
             </span>
             <span class="frame2">          
-              <img src="keras.png" alt="keras">
+              <img src="img/tensorflow.png" alt="tensorflow" style="padding-bottom: 5px;">
             </span>
             <span class="frame2">          
-              <img src="pandas.png" alt="pandas" style="padding-top: 10px; height: 68px; ">
+              <img src="img/keras.png" alt="keras">
             </span>
             <span class="frame2">          
-              <img src="numpy.png" alt="numpy" style="height: ">
+              <img src="img/pandas.png" alt="pandas" style="padding-top: 10px; height: 68px; ">
+            </span>
+            <span class="frame2">          
+              <img src="img/numpy.png" alt="numpy" style="height: ">
             </span>
           </div>
 
           <div id="page3" align="center">
             <span class="frame2">          
-              <img src="git.png" alt="git">
+              <img src="img/git.png" alt="git">
             </span>
             <span class="frame2">          
-              <img src="office.png" alt="office">
+              <img src="img/CLIs.png" alt="CLIs">
             </span>
             <span class="frame2">          
-              <img src="svn.png" alt="svn" >
+              <img src="img/office.png" alt="office">
             </span>
             <span class="frame2">          
-              <img src="sql.png" alt="sql" >
+              <img src="img/svn.png" alt="svn" >
+            </span>
+            <span class="frame2">          
+              <img src="img/sql.png" alt="sql" >
             </span>
           </div>
         </div>
@@ -138,6 +144,7 @@
           }
           dotFlag =1;
           $("#dot1").css("background-color", "rgb(10,190,190)");
+          inilineTitle.innerHTML = titles[dotFlag-1];
         })
 
         $("#dotButton2").click(function(){
@@ -153,6 +160,7 @@
           }
           dotFlag = 2;
           $("#dot2").css("background-color", "rgb(10,190,190)");
+          inilineTitle.innerHTML = titles[dotFlag-1];
         })
 
         $("#dotButton3").click(function(){
@@ -168,6 +176,7 @@
           }
           dotFlag =3;
           $("#dot3").css("background-color", "rgb(10,190,190)");
+          inilineTitle.innerHTML = titles[dotFlag-1];
         })
       })
     </script>
