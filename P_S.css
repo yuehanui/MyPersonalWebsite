@@ -22,10 +22,10 @@ body {
     margin-top: -90px;
     margin-right: 30px;
 }
-ul {
+.top_ul {
     list-style-type: none;
 }
-li {
+.top_li {
     float: left;
     padding: 20px;
 }
